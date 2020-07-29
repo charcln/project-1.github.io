@@ -1,0 +1,363 @@
+@media only screen and (min-width: 960px) {
+
+    /* fonts */
+
+    @font-face {
+      font-family: apercu-light;
+      src: url(fonts/apercu/apercu-light.otf);
+    }
+    
+    @font-face {
+      font-family: apercu-regular;
+      src: url(fonts/apercu/apercu-regular.otf);
+    }
+    
+    @font-face {
+      font-family: apercu-bold;
+      src: url(fonts/apercu/apercu-bold.otf);
+    }
+    
+    @font-face {
+      font-family: apercu-medium;
+      src: url(fonts/apercu/apercu-medium.otf);
+    }
+    
+    @font-face {
+      font-family: cormorant-bold;
+      src: url(fonts/cormorant/cormorant-bold.otf);
+    }
+
+
+    /* general styling */
+
+    body {
+        font-family: apercu-light;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+      
+    b {
+        font-family: apercu-regular;
+    }
+      
+    strong {
+        font-family: apercu-bold;
+    }
+
+    button:focus {
+        outline: 0;
+    }
+
+
+    /* announcement bar */
+
+        /* removes border radius and margin */
+        .alert {
+            border-radius: 0;
+            margin-bottom: 0rem;
+        }
+        
+        /* gives style to background, border and font */
+        .alert-warning {
+            background-color: #f1f1f1;
+            border-color: #e1e1e1;
+            color: black;
+        }
+
+
+    /* hero section */
+        /* overlays image and text, gives style */
+        .hero-container {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        
+        .hero-image-container img {
+            object-fit: cover;
+        }
+        
+        .hero-image-container {
+            height: 670px;
+            overflow: hidden;
+        }
+        
+        .text-block {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 35px 0px;  
+        }
+        
+        .hero-shop-now-button {
+            border-radius: 30px;
+            background-color: black;
+            border: black 1px solid;
+            padding: 10px 30px;
+            color: white;
+            font-family: cormorant-bold;
+            transition-duration: 0.4s;
+        }
+        
+        .hero-shop-now-button:hover {
+           border-radius: 30px;
+           background-color: transparent;
+           border: 1px solid black;
+           padding: 10px 30px;
+           color: black;
+           transition-duration: 0.3s;
+        }
+
+    /* featured products section */
+
+        /* gives header style */
+        .featured-header {
+            padding-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 3%;
+        }
+            
+        /* allows content to be horizontally scrollable */
+        .featured-card {
+            background-color: #fff;
+            min-width: 100%;
+            min-height: 200px;
+            display: flex;
+            overflow-x: auto;
+            padding-left: 5%;
+            margin-bottom: 10%;
+        }
+            
+        /* removes scrollbar */
+        .featured-card::-webkit-scrollbar {
+            display: none;
+        }
+            
+        /* resizes individual containers */
+        .featured-card-content {
+            min-width: 40%;
+            height: auto;
+            margin: 5px;
+        }
+            
+        /* breaks up texts and buttons */
+        .featured-card-content a, button {
+            display: block;
+        }
+          
+    .featured-card-content p {
+        margin-bottom: 0;
+    }
+          
+    .featured-card-content img {
+        width: 100%;
+    }
+          
+    .featured-title {
+        margin-top: 5%;
+    }
+          
+        /* gives buttons style */
+        .featured-card-content button {
+            border-radius: 30px;
+            background-color: black;
+            border: black 1px solid;
+            padding: 10px 30px;
+            color: white;
+            font-family: cormorant-bold;
+            transition-duration: 0.4s;
+            margin-top: 5%;
+        }
+            
+        .featured-card-content button:hover {
+            border-radius: 30px;
+            background-color: transparent;
+            border: 1px solid black;
+            padding: 10px 30px;
+            color: black;
+            transition-duration: 0.3s;
+        }
+
+
+    /* our categories section */    
+    .section-title-categories {
+    padding-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    display: block;
+    }
+
+    .card {
+    border: 0;
+    }
+
+        /* adds white spaces at the sides */
+        .row, .row-cols-1, .row-cols-md-2 {
+        padding-left: 5%;
+        padding-right:5%;
+        margin-right: 0;
+        margin-bottom: 10%;
+        }
+
+        /* gives buttons style */
+        .product-shop-now-button {
+        display:block;
+        border-radius: 30px;
+        border: black 1px solid;
+        padding: 10px 30px;
+        color: black;
+        background-color: transparent;
+        font-family: cormorant-bold;
+        margin-top: 1rem;
+        }
+
+        .product-shop-now-button:hover {
+        border-radius: 30px;
+        background-color: black;
+        border: 1px solid black;
+        padding: 10px 30px;
+        color: white;
+        transition-duration: 0.3s;
+        }    
+
+    /* newsletter section */
+        /* gives button style */
+        .newsletter-submit-button {
+            border-radius: 30px;
+            border: black 1px solid;
+            padding: 10px 30px;
+            color: black;
+            background-color: transparent;
+            font-family: cormorant-bold;
+        }
+
+        .newsletter-submit-button:hover {
+            border-radius: 30px;
+            background-color: black;
+            border: 1px solid black;
+            padding: 10px 30px;
+            color: white;
+            transition-duration: 0.3s;
+        }
+
+    .email-field {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+        /* gives form style */
+        .form-control {
+            font-size: 0.8rem;
+            color: #babdc0;
+            text-align: center;
+            border: 0;
+            border-bottom: 1px solid #babdc0;
+            border-radius: 0;
+            width: 250px;
+            background-color: transparent;
+        }
+
+        /* allows the form to change color when active */
+        .form-control:focus {
+            color: black;
+            border: 0;
+            border-bottom: 1px solid black;
+            width: 250px;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+    .newsletter {
+        background-color: #f1f1f1;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+
+    /* instagram section */
+        /* hides instagram for mobile */
+        .mobile-instagram {
+            display: none;
+        }
+
+        /* allows content to be in a single row */
+        .desktop-instagram {
+            display: flex;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-bottom: 10%;
+        }
+
+        /* gives title style */
+        .instagram-header {
+            padding-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 3%;
+        }
+
+        .instagram-header a {
+            color: black;
+        }
+
+        /* adds hover effect to "@rewaremodern" */
+        .instagram-header a:hover {
+            text-decoration: none;
+        }
+
+    .img-thumbnail {
+        border: 0;
+        padding: 2px;
+        border-radius: 0;
+    }
+
+
+    /* footer menu section */
+        /* hides footer menu section for mobile */
+        .mobile-footer-menu {
+            display: none;
+        }
+
+    .desktop-footer-menu {
+        display: flex;
+        padding: 5%;
+        background-color: black;
+    }
+
+    .customer-care, .about-us, .connect {
+        padding-right: 20%;
+    }
+
+    .desktop-footer-menu a {
+        display: block;
+        color: white;
+    }
+
+    .desktop-footer-menu b {
+        display: block;
+        color: white;
+    }
+
+    .desktop-footer-menu a:hover {
+        text-decoration: none;
+        color: #dddddd;
+        transition-duration: 0.2s;
+    }
+
+
+    /* footer copyright */
+    .copyright {
+        color: white;
+        font-size: 0.8rem;
+        background-color: black;
+        padding-bottom: 2rem;
+        padding-left: 5%;
+    }
+
+
+}
